@@ -73,11 +73,11 @@ public class TreeItem {
 		this.padding = padding;
 	}
 	public View getView() {
+		view.setPadding(getLevel()*padding+left,top,right,bottom);
 		return view;
 	}
 
 	public void setView(View view) {
-		view.setPadding(getLevel()*padding+left,top,right,bottom);
 		this.view = view;
 	}
 
